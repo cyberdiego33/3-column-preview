@@ -1,0 +1,99 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Lexend Deca", sans-serif;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.cars-card {
+    width: 280px;
+    padding: 2rem;
+}
+
+
+.header {
+    font-family: "Big Shoulders Display", sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+.describe {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.button {
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+    border: 3px solid #fff;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 2rem 0 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+.button:hover,
+.button:active {
+    background-color: transparent;
+}
+.button:hover span {
+    color: #fff;
+}
+
+.sedan {
+    background-color: var(--Bright-orange);
+}
+.sedan .button {
+    color: var(--Bright-orange);
+}
+.suv {
+    background-color: var(--Dark-cyan);
+}
+.suv .button {
+    color: var(--Dark-cyan);
+}
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+.luxury .button {
+    color: var(--Very-dark-cyan);
+}
+
+@media screen and (min-width: 900px) {
+    .flex-container {
+        flex-direction: row;
+    }
+    .cars-card {
+        padding: 2rem;
+        width: 262px;
+        font-size: 15px;
+    }
+    .button {
+        margin: 5rem 0 1rem;
+    }
+}
