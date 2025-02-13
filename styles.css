@@ -96,4 +96,6 @@ body {
     .button {
         margin: 5rem 0 1rem;
     }
+    .describe {
+        height: 120px;
 }
