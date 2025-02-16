@@ -67,6 +67,7 @@ body {
 
 .sedan {
     background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0 0 ;
 }
 .sedan .button {
     color: var(--Bright-orange);
@@ -79,6 +80,7 @@ body {
 }
 .luxury {
     background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
 }
 .luxury .button {
     color: var(--Very-dark-cyan);
@@ -98,5 +100,11 @@ body {
     }
     .describe {
         height: 120px;
+    }
+    .sedan {
+        border-radius: 5px 0 0 5px;
+    }
+    .luxury {
+        border-radius: 0 10px 10px 0;
     }
 }
